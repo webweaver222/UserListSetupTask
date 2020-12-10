@@ -1,0 +1,142 @@
+@import "~bootstrap/scss/bootstrap"
+@import "./reset.sass"
+    
+@font-face 
+    font-family: oxygen
+    src: url('./fonts/Oxygen-Light.ttf')
+
+
+html, body
+    height: 100%
+    font-family: oxygen
+    font-size: 16px
+    #root
+       
+        height: 100%
+        .app
+            width: 100%
+            min-height: 100%
+            position: relative
+            .input-modal, .dialog-modal
+                width: 550px
+                background-color: #fff
+                padding: 20px
+                border-radius: 10px
+                position: relative
+                animation: fadein .5s ease
+                label
+                    margin: 5px 0
+                ul.errors
+                    margin-bottom: 7px
+                    li
+                        color: red
+                        font-size: 14px
+
+                b
+                    font-weight: bold
+                .btn-wrapper, h2
+                    text-align: center
+                    margin-top: 14px
+                .close-login
+                    position: absolute
+                    top: 5px
+                    right: 5px
+                    cursor: pointer
+                button
+                    margin-top: 10px
+            .UserListWrapper
+                padding: 80px 0 20px 0
+                input
+                    width: 200px
+                    margin-bottom: 20px
+                table
+                    background-color: rgba(255,255,255, .9)
+                    width: 100%
+                    thead
+                        th
+                            vertical-align: middle
+                            select
+                                display: inline
+                                width: 60%
+                                margin-left: 10px
+                    tbody
+                        tr
+                            td
+                                word-break: break-all
+                            td.controls
+                                text-align: center
+                                vertical-align: middle
+                                padding: 0
+                                i
+                                    font-size: 14px
+                                    cursor: pointer
+                                    &:first-child
+                                        margin-right: 10px
+                                    &:hover
+                                        color: $primary
+                         
+.inputWrapper
+    position: relative
+    .fas.fa-eye
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translateY(-50%)
+        cursor: pointer
+        
+.modalWindow
+    position: fixed
+    z-index: 10
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    
+    
+.shading
+        position: absolute
+        width: 100%
+        min-height: 100%
+        top: 0
+        z-index: 4
+        background-color: rgba(96,96,96,.9)
+
+.background
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    opacity: .6
+    .bub1
+        transform: translate(0, 90%)
+        animation: bub1 8s linear infinite
+    .bub2
+        transform: translate(30%, 70%)
+        animation: bub2 10s linear infinite
+    .bub3
+        transform: translate(50%, 100%)
+        animation: bub3 11s linear infinite
+    .bub4
+        transform: translate(80%, 50%)
+        transform: scale(1)
+        animation: bub4 15s linear infinite
+    .bub5
+        transform: translate(120%, 95%)
+        animation: bub5 15s linear infinite
+    .bub6
+        transform: translate(150%, 101%)
+        animation: bub6 8s linear infinite
+    .bub7
+        transform: translate(170%, 95%)
+        animation: bub7 8s linear infinite
+        transform: scale(0.2)
+    .bub8
+        transform: translate(175%, 100%)
+        animation: bub8 8s linear infinite
+        transform: scale(0.2)
+                
+        
+     
+
+  
